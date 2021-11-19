@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 	<title>Rogerio J. Gentil Github Page</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<h1>Rogerio J. Gentil</h1>
@@ -11,8 +12,17 @@
 
 	<section>
 		<h2>About Me</h2>
+		<script>
+			$(function() {
+				let birthday = new Date(1983, 00, 14, 8, 3, 0);
+				let today = new Date();
+				let diff = new Date(today.getTime() - birthday.getTime());
+				var age = diff.getUTCFullYear() - 1970;
+				$("#age").html(age);
+			});
+		</script>
 		<p>
-			Age: 38
+			Age: <span id="age"></span>
 		</p>
 	</section>
 
