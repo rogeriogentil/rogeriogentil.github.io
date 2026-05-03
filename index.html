@@ -86,7 +86,7 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 	<title>Rogerio J. Gentil - Software Architect & Engineer</title>
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHMnYbylOc7proQfbK4XaHfBgcjw=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<h1>Rogerio J. Gentil</h1>
@@ -94,6 +94,9 @@
 
 	<section>
 		<h2>About Me</h2>
+		<p>
+			Age: <span id="age"></span>
+		</p>
 		<script>
 			$(function() {
 				let birthday = new Date(1983, 00, 14, 8, 3, 0);
@@ -103,9 +106,6 @@
 				$("#age").html(age);
 			});
 		</script>
-		<p>
-			Age: <span id="age"></span>
-		</p>
 	</section>
 
 	<section>
